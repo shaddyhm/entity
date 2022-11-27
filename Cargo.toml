@@ -1,0 +1,15 @@
+[package]
+name = "entity"
+version = "0.0.0"
+authors = ["Shaddy Mansour <shaddyhm@gmail.com>"]
+description = "A `cargo generate` template for quick-starting a procedural macro crate"
+keywords = ["template", "proc_macro", "procmacro"]
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1.0.10"
+proc-macro2 = "1.0.32"
+syn = { version = "1.0.82", features = ["full", "extra-traits"] }
